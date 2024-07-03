@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Search Country</title>
     <script src="https://kit.fontawesome.com/b7e75ffc32.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon"  href="img/Asset 2.svg">
 </head>
 <body>
-    <div class="w-75 d-flex flex-wrap">
+    <div class="position-fixed d-flex flex-wrap" id="details">
+    </div>
+
+    <div id="main" class="w-75 z-1 d-flex flex-wrap">
+        <img class="w-25 mt-5" src="img/Asset 1.svg" alt="">
         <div class="searchbar w-75 ms-5 mt-5">
-            <input type="text" placeholder="Search Country" class="ps-2" id="txtSearch"><button id="btnSearch" onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input type="text" placeholder="Search Country" class="ps-2" id="txtSearch"><button id="btnSearch" ><i class="fa-solid fa-magnifying-glass"></i></button>
             <button class="ms-3" id="btnReset" onclick="allCountries()"><i class="fa-solid fa-rotate-left"></i></button>
         </div>
         <div class="tbl-bg mt-5">
-            <table id="tbl" class="table table-striped text-center"></table>
+            <table id="tbl" class="table table-striped table-hover text-center"></table>
         </div>
     </div>
 
+    <div id="outside" class="w-100 h-100 position-fixed"></div>
+    
 
     <script src="app.js"></script>
 </body>

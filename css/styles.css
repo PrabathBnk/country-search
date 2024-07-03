@@ -59,3 +59,48 @@ button:hover{
     box-shadow: 0 5px 20px #cccccc;
     background-color: white;
 }
+#details{
+    z-index: 0;
+    width: 800px;
+    height: 500px;
+    top: 20vh;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow:  0 2px 35px #55555591;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#outside{
+    z-index: 0;
+    transition: background-color 0.5s;
+}
+
+#main{
+    transition: filter 0.3s;
+}
+
+#details h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: -0.5rem;
+}
+#details table{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+#details table tr{
+    border-bottom: 1px solid #e0e0e0;
+}
+#details table th{
+    padding-left: 6rem;
+    width: 20rem;
+}
+
+table td:hover{
+    cursor: pointer;
+}
+tr:not(#headers){
+    --bs-table-hover-bg: #e0e0e0 !important;
+}
