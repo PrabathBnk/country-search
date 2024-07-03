@@ -2,6 +2,7 @@ body{
     width: 100vw;
     display: flex;
     justify-content: center;
+    background-color: rgb(225, 235, 241);
 }
 div{
     display: flex;
@@ -9,9 +10,18 @@ div{
 }
 #txtSearch{
     width: 35%;
+    border: 2px solid rgb(17, 164, 233);
+    border-radius: 10px 0px 0px 10px;
+    padding: 5px;
+}
+#txtSearch:focus{
+    border: 2px solid rgb(50, 190, 255);
+    outline: none;
+    box-shadow: 0 0px 5px rgba(5, 116, 167, 0.486);
 }
 #btnSearch{
     width: 11%;
+    border-radius: 0 10px 10px 0;
 }
 #tbl{
     width: 800px;
@@ -29,6 +39,7 @@ div{
 }
 #btnReset{
     width: 60px;
+    border-radius: 10px;
 }
 button{
     padding-top: 5px;
@@ -39,4 +50,12 @@ button{
 }
 button:hover{
     background-color: rgb(50, 190, 255);
+    box-shadow: 0 2px 10px #b9b9b9;
+}
+
+.tbl-bg{
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 20px #cccccc;
+    background-color: white;
 }
