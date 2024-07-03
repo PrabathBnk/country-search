@@ -1,0 +1,42 @@
+body{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+#txtSearch{
+    width: 35%;
+}
+#btnSearch{
+    width: 11%;
+}
+#tbl{
+    width: 800px;
+}
+#tbl th{
+    padding-left: 20px !important;
+    padding-right: 20px;
+    background-color: rgb(66, 187, 243);
+    color: white;
+    vertical-align: middle;
+    border-left: 1px solid rgba(255, 255, 255, 0.411);
+}
+#tbl tr a{
+    font-size: 20px;
+}
+#btnReset{
+    width: 60px;
+}
+button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(17, 164, 233);
+}
+button:hover{
+    background-color: rgb(50, 190, 255);
+}
